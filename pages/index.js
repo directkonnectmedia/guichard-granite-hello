@@ -40,8 +40,8 @@ section {
         <section id="home" className="hero-reveal">
           <div className="hero-reveal-media">
             <img
-              src="https://images.pexels.com/photos/7031607/pexels-photo-7031607.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2400"
-              alt="Luxury quartz countertop kitchen with stone island"
+              src="/hero-kitchen.png"
+              alt="Modern luxury kitchen with veined granite island, custom cabinetry, and pendant lighting"
               className="hero-reveal-image"
             />
             <div className="hero-reveal-overlay"></div>
