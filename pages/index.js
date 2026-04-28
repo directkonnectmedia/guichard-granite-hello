@@ -51,66 +51,33 @@ section {
           <div className="hero-reveal-container">
             <div className="hero-reveal-data-bar">
               <div className="hero-reveal-data-item">
-                <span className="hero-reveal-data-label">Owner:</span>
-                <span className="hero-reveal-data-value">Miguel</span>
+                <span className="hero-reveal-data-value">Owner · Miguel</span>
               </div>
               <div className="hero-reveal-data-divider"></div>
               <div className="hero-reveal-data-item">
-                <span className="hero-reveal-data-value">
-                  Specializing in Kitchens &amp; Baths
-                </span>
+                <span className="hero-reveal-data-value">AZ Valley</span>
               </div>
               <div className="hero-reveal-data-divider"></div>
               <div className="hero-reveal-data-item">
-                <span className="hero-reveal-data-value">
-                  Free Consultations
-                </span>
+                <span className="hero-reveal-data-value">Free Quotes</span>
               </div>
             </div>
             <div className="hero-reveal-content">
-              <span className="hero-reveal-kicker">
-                Quartz &amp; Granite Countertop Studio
-              </span>
+              <span className="hero-reveal-kicker">Guichard Granite · Arizona</span>
               <h1 className="hero-title">
-                <span>
-                  {' '}
-                  Luxury Quartz &amp; Granite.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span>
-                  {' '}
-                  Crafted for Your Kitchen &amp; Bath.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
+                <span>Quartz &amp; granite,</span>
+                <br />
+                <span>crafted for you.</span>
               </h1>
-              <p className="hero-subtitle">
-                Guichard Granite LLC delivers precision fabrication and flawless
-                installation for modern homes.
-              </p>
-              <div className="hero-reveal-tags">
-                <span className="hero-reveal-tag">Granite</span>
-                <span className="hero-reveal-tag">Quartz</span>
-                <span className="hero-reveal-tag">Kitchens</span>
-                <span className="hero-reveal-tag">Bathrooms</span>
-              </div>
               <div className="hero-reveal-actions">
                 <a href="#contact">
                   <div className="btn-primary btn btn-lg">
-                    <span>Start Your Project</span>
+                    <span>Get a Free Quote</span>
                   </div>
                 </a>
                 <a href="#gallery">
                   <div className="btn-outline btn btn-lg">
-                    <span>View Our Work</span>
+                    <span>See Our Work</span>
                   </div>
                 </a>
               </div>
