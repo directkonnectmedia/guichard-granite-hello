@@ -590,7 +590,7 @@ section {
                     </span>
                     <a href="tel:6025247000">
                       <div className="quote-contact-value">
-                        <span>602-524-7000 ext. 0178</span>
+                        <span>602-524-7000</span>
                       </div>
                     </a>
                   </div>
@@ -642,85 +642,232 @@ section {
                 action="/submit"
                 method="POST"
                 data-form-id="4f05abfd-820c-4798-9c0b-97b181fec77d"
-                className="quote-contact-form"
+                className="contact-wizard"
               >
-                <div className="form-group">
-                  <label htmlFor="name">Full Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="John Doe"
-                    data-form-field-id="name"
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="phone">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    placeholder="(602) 000-0000"
-                    data-form-field-id="phone"
-                  />
-                </div>
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="project">Project Type</label>
-                    <select
-                      id="project"
-                      name="project"
-                      required
-                      defaultValue=""
-                      data-form-field-id="project"
-                    >
-                      <option value="" disabled>
-                        Select option
-                      </option>
-                      <option value="kitchen">Kitchen</option>
-                      <option value="bathroom">Bathroom</option>
-                      <option value="both">Both</option>
-                    </select>
+                <ol className="contact-wizard-steps" aria-label="Quote request progress">
+                  <li className="contact-wizard-step is-active" data-step="1">
+                    <span className="contact-wizard-step-num">1</span>
+                    <span className="contact-wizard-step-label">Services</span>
+                  </li>
+                  <li className="contact-wizard-step" data-step="2">
+                    <span className="contact-wizard-step-num">2</span>
+                    <span className="contact-wizard-step-label">Project</span>
+                  </li>
+                  <li className="contact-wizard-step" data-step="3">
+                    <span className="contact-wizard-step-num">3</span>
+                    <span className="contact-wizard-step-label">Contact</span>
+                  </li>
+                  <li className="contact-wizard-step" data-step="4">
+                    <span className="contact-wizard-step-num">4</span>
+                    <span className="contact-wizard-step-label">Done</span>
+                  </li>
+                </ol>
+                <div className="contact-wizard-panels">
+                  <div className="contact-wizard-panel is-active" data-panel="1">
+                    <h3 className="contact-wizard-title">
+                      What services are you interested in?
+                    </h3>
+                    <p className="contact-wizard-hint">Select all that apply.</p>
+                    <div className="contact-wizard-pills">
+                      <label className="contact-wizard-pill">
+                        <input
+                          type="checkbox"
+                          name="services"
+                          value="Quartz Countertops"
+                        />
+                        <span>Quartz Countertops</span>
+                      </label>
+                      <label className="contact-wizard-pill">
+                        <input
+                          type="checkbox"
+                          name="services"
+                          value="Granite Countertops"
+                        />
+                        <span>Granite Countertops</span>
+                      </label>
+                      <label className="contact-wizard-pill">
+                        <input
+                          type="checkbox"
+                          name="services"
+                          value="Kitchen Countertops"
+                        />
+                        <span>Kitchen Countertops</span>
+                      </label>
+                      <label className="contact-wizard-pill">
+                        <input
+                          type="checkbox"
+                          name="services"
+                          value="Bathroom Vanities"
+                        />
+                        <span>Bathroom Vanities</span>
+                      </label>
+                    </div>
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="material">Material Interest</label>
-                    <select
-                      id="material"
-                      name="material"
-                      required
-                      defaultValue=""
-                      data-form-field-id="material"
-                    >
-                      <option value="" disabled>
-                        Select option
-                      </option>
-                      <option value="quartz">Quartz</option>
-                      <option value="granite">Granite</option>
-                      <option value="undecided">Undecided</option>
-                    </select>
+                  <div className="contact-wizard-panel" data-panel="2">
+                    <h3 className="contact-wizard-title">
+                      Tell us about your project.
+                    </h3>
+                    <p className="contact-wizard-hint">
+                      Pick the space you&apos;re transforming and the stone you have
+                      in mind.
+                    </p>
+                    <div className="contact-wizard-field">
+                      <span className="contact-wizard-field-label">
+                        Project type
+                      </span>
+                      <div className="contact-wizard-pills">
+                        <label className="contact-wizard-pill">
+                          <input type="radio" name="project_type" value="Kitchen" />
+                          <span>Kitchen</span>
+                        </label>
+                        <label className="contact-wizard-pill">
+                          <input
+                            type="radio"
+                            name="project_type"
+                            value="Bathroom"
+                          />
+                          <span>Bathroom</span>
+                        </label>
+                        <label className="contact-wizard-pill">
+                          <input type="radio" name="project_type" value="Both" />
+                          <span>Both</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div className="contact-wizard-field">
+                      <span className="contact-wizard-field-label">
+                        Material interest
+                      </span>
+                      <div className="contact-wizard-pills">
+                        <label className="contact-wizard-pill">
+                          <input type="radio" name="material" value="Quartz" />
+                          <span>Quartz</span>
+                        </label>
+                        <label className="contact-wizard-pill">
+                          <input type="radio" name="material" value="Granite" />
+                          <span>Granite</span>
+                        </label>
+                        <label className="contact-wizard-pill">
+                          <input type="radio" name="material" value="Undecided" />
+                          <span>Undecided</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div className="contact-wizard-field">
+                      <label
+                        className="contact-wizard-field-label"
+                        htmlFor="wizard-message"
+                      >
+                        Brief message{' '}
+                        <span className="contact-wizard-optional">optional</span>
+                      </label>
+                      <textarea
+                        id="wizard-message"
+                        name="message"
+                        rows="3"
+                        placeholder="Square footage, timeline, design ideas..."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div className="contact-wizard-panel" data-panel="3">
+                    <h3 className="contact-wizard-title">How can we reach you?</h3>
+                    <p className="contact-wizard-hint">
+                      Miguel personally responds within 24 hours.
+                    </p>
+                    <div className="contact-wizard-field">
+                      <label
+                        className="contact-wizard-field-label"
+                        htmlFor="wizard-name"
+                      >
+                        Full name
+                      </label>
+                      <input
+                        type="text"
+                        id="wizard-name"
+                        name="name"
+                        autoComplete="name"
+                        required
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div className="contact-wizard-field">
+                      <label
+                        className="contact-wizard-field-label"
+                        htmlFor="wizard-phone"
+                      >
+                        Phone number
+                      </label>
+                      <input
+                        type="tel"
+                        id="wizard-phone"
+                        name="phone"
+                        autoComplete="tel"
+                        required
+                        placeholder="(602) 000-0000"
+                      />
+                    </div>
+                    <div className="contact-wizard-field">
+                      <label
+                        className="contact-wizard-field-label"
+                        htmlFor="wizard-email"
+                      >
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="wizard-email"
+                        name="email"
+                        autoComplete="email"
+                        required
+                        placeholder="you@email.com"
+                      />
+                    </div>
+                  </div>
+                  <div className="contact-wizard-panel" data-panel="4">
+                    <div className="contact-wizard-done">
+                      <div className="contact-wizard-done-mark" aria-hidden="true">
+                        <svg
+                          width="32"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M5 13l4 4L19 7"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <h3 className="contact-wizard-title">Request received.</h3>
+                      <p className="contact-wizard-hint">
+                        Thank you. Miguel will reach out within 24 hours to plan
+                        your project. Need a faster answer? Call{' '}
+                        <a href="tel:6025247000">602-524-7000</a>.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="form-group">
-                  <label htmlFor="message">Brief Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    placeholder="Tell us about your project..."
-                    data-form-field-id="message"
-                  ></textarea>
+                <div className="contact-wizard-actions">
+                  <button
+                    type="button"
+                    className="btn btn-outline contact-wizard-back"
+                    data-action="back"
+                    disabled
+                  >
+                    Back
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-primary contact-wizard-next"
+                    data-action="next"
+                  >
+                    Next Step
+                  </button>
                 </div>
-                <button
-                  id="thq_button_6EoA"
-                  name="button"
-                  type="submit"
-                  data-form-field-id="thq_button_6EoA"
-                  className="btn-primary btn btn-xl btn-full"
-                >
-                  Request Free Estimate
-                </button>
               </form>
             </div>
           </div>
@@ -828,17 +975,119 @@ to {opacity: 1;}}
     revealObserver.observe(el)
   })
 
-  // Form Submission handling (Native-first approach)
-  const contactForm = document.querySelector(".quote-contact-form")
-  contactForm.addEventListener("submit", (e) => {
-    // Let native validation happen first
-    if (!contactForm.checkValidity()) return
+  // Contact Wizard
+  const wizard = document.querySelector(".contact-wizard")
+  if (wizard) {
+    const steps = Array.from(wizard.querySelectorAll(".contact-wizard-step"))
+    const panels = Array.from(wizard.querySelectorAll(".contact-wizard-panel"))
+    const backBtn = wizard.querySelector('[data-action="back"]')
+    const nextBtn = wizard.querySelector('[data-action="next"]')
+    const TOTAL = panels.length
+    const FORM_STEPS = TOTAL - 1
+    let current = 1
 
-    // UX enhancement: button state
-    const submitBtn = contactForm.querySelector('button[type="submit"]')
-    submitBtn.disabled = true
-    submitBtn.textContent = "Sending Request..."
-  })
+    function setStep(n) {
+      current = Math.max(1, Math.min(TOTAL, n))
+      steps.forEach((step) => {
+        const s = parseInt(step.dataset.step, 10)
+        step.classList.toggle("is-active", s === current)
+        step.classList.toggle("is-complete", s < current)
+      })
+      panels.forEach((panel) => {
+        const p = parseInt(panel.dataset.panel, 10)
+        panel.classList.toggle("is-active", p === current)
+      })
+      backBtn.disabled = current === 1 || current === TOTAL
+      backBtn.style.visibility = current === TOTAL ? "hidden" : ""
+      if (current === TOTAL) {
+        nextBtn.style.display = "none"
+      } else if (current === FORM_STEPS) {
+        nextBtn.style.display = ""
+        nextBtn.textContent = "Submit Request"
+      } else {
+        nextBtn.style.display = ""
+        nextBtn.textContent = "Next Step"
+      }
+      const panel = panels.find((p) => parseInt(p.dataset.panel, 10) === current)
+      if (panel) {
+        const firstField = panel.querySelector("input, textarea, select")
+        if (firstField && current !== TOTAL) firstField.focus({ preventScroll: true })
+      }
+    }
+
+    function validateStep(n) {
+      if (n === 1) {
+        const checked = wizard.querySelectorAll('input[name="services"]:checked')
+        if (checked.length === 0) {
+          flashError("Please select at least one service.")
+          return false
+        }
+      }
+      if (n === 2) {
+        const projectType = wizard.querySelector('input[name="project_type"]:checked')
+        const material = wizard.querySelector('input[name="material"]:checked')
+        if (!projectType) {
+          flashError("Choose a project type to continue.")
+          return false
+        }
+        if (!material) {
+          flashError("Pick the material you have in mind.")
+          return false
+        }
+      }
+      if (n === 3) {
+        const fields = wizard.querySelectorAll('[data-panel="3"] input[required]')
+        for (const f of fields) {
+          if (!f.checkValidity()) {
+            f.reportValidity()
+            return false
+          }
+        }
+      }
+      return true
+    }
+
+    let errorTimer
+    function flashError(message) {
+      let banner = wizard.querySelector(".contact-wizard-error")
+      if (!banner) {
+        banner = document.createElement("div")
+        banner.className = "contact-wizard-error"
+        wizard.querySelector(".contact-wizard-actions").before(banner)
+      }
+      banner.textContent = message
+      banner.classList.add("is-visible")
+      clearTimeout(errorTimer)
+      errorTimer = setTimeout(() => banner.classList.remove("is-visible"), 3500)
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (!validateStep(current)) return
+      if (current === FORM_STEPS) {
+        nextBtn.disabled = true
+        nextBtn.textContent = "Sending..."
+        setTimeout(() => {
+          nextBtn.disabled = false
+          setStep(TOTAL)
+        }, 600)
+        return
+      }
+      setStep(current + 1)
+    })
+
+    backBtn.addEventListener("click", () => {
+      if (current > 1 && current < TOTAL) setStep(current - 1)
+    })
+
+    steps.forEach((step) => {
+      step.addEventListener("click", () => {
+        const target = parseInt(step.dataset.step, 10)
+        if (target < current) setStep(target)
+      })
+    })
+
+    wizard.addEventListener("submit", (e) => e.preventDefault())
+  }
 })()
 </script>`}
             ></Script>
