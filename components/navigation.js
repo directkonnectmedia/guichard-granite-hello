@@ -155,7 +155,7 @@ const Navigation = (props) => {
                 </a>
                 <div className="navigation-mobile-contact-info">
                   <p className="section-content">Owner: Miguel</p>
-                  <p className="section-content">602-524-7000 ext. 0178</p>
+                  <p className="section-content">602-524-7000</p>
                 </div>
               </div>
             </div>

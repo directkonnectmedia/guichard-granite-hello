@@ -187,7 +187,7 @@ const Footer = (props) => {
                           ></path>
                         </svg>
                       </div>
-                      <span>602-524-7000 (Ext: 0178)</span>
+                      <span>602-524-7000</span>
                     </div>
                   </a>
                   <div className="footer-contact-item">
