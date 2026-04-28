@@ -15,6 +15,7 @@
   --color-slate: #5e7d99;
   --color-slate-soft: #8ba6c2;
   --color-slate-deep: #3d5b75;
+  --color-slate-vivid: #5fa8db;
   --color-border: #9b9b9b;
   --font-size-lg: clamp(1.125rem, 1.6vw, 1.25rem);
   --font-size-sm: clamp(0.85rem, 1vw, 0.95rem);
@@ -1838,16 +1839,16 @@
 }
 
 .hero-reveal-kicker {
-  color: var(--color-slate-soft);
+  color: var(--color-slate-vivid);
   display: inline-flex;
   position: relative;
-  font-size: var(--font-size-xs);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   animation: fadeInUp 1s ease-out both;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--spacing-md);
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55), 0 0 24px color-mix(in srgb, var(--color-slate-vivid) 35%, transparent);
 }
 
 .hero-reveal-kicker::before,
