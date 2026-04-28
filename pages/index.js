@@ -665,29 +665,15 @@ section {
                 <div className="contact-wizard-panels">
                   <div className="contact-wizard-panel is-active" data-panel="1">
                     <h3 className="contact-wizard-title">
-                      What services are you interested in?
+                      What service are you interested in?
                     </h3>
-                    <p className="contact-wizard-hint">Select all that apply.</p>
+                    <p className="contact-wizard-hint">
+                      Pick the option that best fits your project.
+                    </p>
                     <div className="contact-wizard-pills">
                       <label className="contact-wizard-pill">
                         <input
-                          type="checkbox"
-                          name="services"
-                          value="Quartz Countertops"
-                        />
-                        <span>Quartz Countertops</span>
-                      </label>
-                      <label className="contact-wizard-pill">
-                        <input
-                          type="checkbox"
-                          name="services"
-                          value="Granite Countertops"
-                        />
-                        <span>Granite Countertops</span>
-                      </label>
-                      <label className="contact-wizard-pill">
-                        <input
-                          type="checkbox"
+                          type="radio"
                           name="services"
                           value="Kitchen Countertops"
                         />
@@ -695,11 +681,19 @@ section {
                       </label>
                       <label className="contact-wizard-pill">
                         <input
-                          type="checkbox"
+                          type="radio"
                           name="services"
                           value="Bathroom Vanities"
                         />
                         <span>Bathroom Vanities</span>
+                      </label>
+                      <label className="contact-wizard-pill">
+                        <input
+                          type="radio"
+                          name="services"
+                          value="Custom Work"
+                        />
+                        <span>Custom Work</span>
                       </label>
                     </div>
                   </div>
@@ -1017,9 +1011,9 @@ to {opacity: 1;}}
 
     function validateStep(n) {
       if (n === 1) {
-        const checked = wizard.querySelectorAll('input[name="services"]:checked')
-        if (checked.length === 0) {
-          flashError("Please select at least one service.")
+        const selected = wizard.querySelector('input[name="services"]:checked')
+        if (!selected) {
+          flashError("Please choose a service to continue.")
           return false
         }
       }
