@@ -49,19 +49,6 @@ section {
             <div className="hero-reveal-orb hero-reveal-orb-two"></div>
           </div>
           <div className="hero-reveal-container">
-            <div className="hero-reveal-data-bar">
-              <div className="hero-reveal-data-item">
-                <span className="hero-reveal-data-value">Owner · Miguel</span>
-              </div>
-              <div className="hero-reveal-data-divider"></div>
-              <div className="hero-reveal-data-item">
-                <span className="hero-reveal-data-value">AZ Valley</span>
-              </div>
-              <div className="hero-reveal-data-divider"></div>
-              <div className="hero-reveal-data-item">
-                <span className="hero-reveal-data-value">Free Quotes</span>
-              </div>
-            </div>
             <div className="hero-reveal-content">
               <span className="hero-reveal-kicker">Custom kitchens &amp; baths</span>
               <h1 className="hero-title">

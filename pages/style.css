@@ -12,6 +12,9 @@
   --color-accent-soft: #f4d6ad;
   --color-accent-deep: #8a5425;
   --color-accent-glow: rgba(199, 143, 79, 0.35);
+  --color-slate: #5e7d99;
+  --color-slate-soft: #8ba6c2;
+  --color-slate-deep: #3d5b75;
   --color-border: #9b9b9b;
   --font-size-lg: clamp(1.125rem, 1.6vw, 1.25rem);
   --font-size-sm: clamp(0.85rem, 1vw, 0.95rem);
@@ -1308,8 +1311,20 @@
   height: 600px;
   overflow: hidden;
   position: relative;
-  border: 1px solid color-mix(in srgb, var(--color-accent) 25%, transparent);
-  box-shadow: 0 30px 70px rgba(23, 20, 17, 0.14);
+  border-radius: var(--border-radius-xl);
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--color-slate) 65%, transparent) 0%,
+      color-mix(in srgb, var(--color-slate) 30%, transparent) 35%,
+      transparent 70%,
+      color-mix(in srgb, var(--color-slate) 28%, transparent) 100%
+    ) border-box;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-slate) 14%, transparent),
+    0 30px 70px color-mix(in srgb, var(--color-slate) 18%, transparent);
 }
  
 .services-spotlight-info {
@@ -1333,6 +1348,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: calc(var(--border-radius-xl) - 1px);
   transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
  
@@ -1781,7 +1797,7 @@
 }
 
 .hero-reveal-kicker {
-  color: var(--color-accent-soft);
+  color: var(--color-slate-soft);
   display: inline-flex;
   position: relative;
   font-size: var(--font-size-xs);
@@ -1790,6 +1806,7 @@
   margin-bottom: var(--spacing-md);
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
 .hero-reveal-kicker::before,
@@ -1799,7 +1816,7 @@
   height: 1px;
   content: "";
   position: absolute;
-  background: linear-gradient(90deg, transparent, var(--color-accent));
+  background: linear-gradient(90deg, transparent, var(--color-slate-soft));
 }
 
 .hero-reveal-kicker::before {
