@@ -4,7 +4,7 @@
   --spacing-sm: 0.75rem;
   --spacing-xl: 2rem;
   --spacing-xs: 0.5rem;
-  --color-scrim: color-mix(in oklab, #000000 70%, transparent);
+  --color-scrim: color-mix(in oklab, #000000 45%, transparent);
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
   --spacing-4xl: 4rem;
@@ -1210,9 +1210,9 @@
   z-index: 2;
   position: absolute;
   background:
-    radial-gradient(circle at 22% 20%, color-mix(in srgb, var(--color-accent) 30%, transparent), transparent 28%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.74)),
-    linear-gradient(to bottom, var(--color-scrim), transparent 32%, var(--color-scrim));
+    radial-gradient(circle at 22% 20%, color-mix(in srgb, var(--color-accent) 22%, transparent), transparent 32%),
+    linear-gradient(95deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.18) 50%, rgba(0, 0, 0, 0.32) 100%),
+    linear-gradient(to bottom, transparent 0%, transparent 55%, rgba(0, 0, 0, 0.35) 100%);
 }
  
 .hero-reveal-data-bar {
@@ -1732,7 +1732,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6) contrast(1.08) saturate(1.08);
+  filter: brightness(0.92) contrast(1.04) saturate(1.05);
   transform: scale(1.08);
   animation: heroKenBurns 18s ease-in-out infinite alternate;
 }
@@ -1766,7 +1766,7 @@
 .hero-reveal-content  .hero-title {
   animation: heroTitleReveal 1.05s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
   margin-bottom: var(--spacing-lg);
-  text-shadow: 0 22px 60px rgba(0, 0, 0, 0.38);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55), 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
 .hero-reveal-content  .hero-title span:first-child {

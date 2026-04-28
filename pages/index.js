@@ -63,11 +63,11 @@ section {
               </div>
             </div>
             <div className="hero-reveal-content">
-              <span className="hero-reveal-kicker">Guichard Granite · Arizona</span>
+              <span className="hero-reveal-kicker">Custom kitchens &amp; baths</span>
               <h1 className="hero-title">
-                <span>Quartz &amp; granite,</span>
+                <span>Stone,</span>
                 <br />
-                <span>crafted for you.</span>
+                <span>done right.</span>
               </h1>
               <div className="hero-reveal-actions">
                 <a href="#contact">
