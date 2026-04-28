@@ -770,17 +770,20 @@
   left: 0;
   right: 0;
   bottom: -1px;
-  height: 2px;
+  height: 3px;
   pointer-events: none;
   background: linear-gradient(
     90deg,
     transparent 0%,
-    color-mix(in srgb, var(--color-slate) 25%, transparent) 12%,
-    var(--color-slate) 50%,
-    color-mix(in srgb, var(--color-slate) 25%, transparent) 88%,
+    color-mix(in srgb, var(--color-slate) 35%, transparent) 8%,
+    var(--color-slate) 30%,
+    var(--color-slate) 70%,
+    color-mix(in srgb, var(--color-slate) 35%, transparent) 92%,
     transparent 100%
   );
-  box-shadow: 0 0 18px color-mix(in srgb, var(--color-slate) 55%, transparent);
+  box-shadow:
+    0 0 14px color-mix(in srgb, var(--color-slate) 60%, transparent),
+    0 0 28px color-mix(in srgb, var(--color-slate-soft) 35%, transparent);
 }
  
 .navigation-container {
@@ -1850,11 +1853,18 @@
 .hero-reveal-kicker::before,
 .hero-reveal-kicker::after {
   top: 50%;
-  width: 42px;
-  height: 1px;
+  width: 64px;
+  height: 2px;
   content: "";
   position: absolute;
-  background: linear-gradient(90deg, transparent, var(--color-slate-soft));
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-slate-soft) 55%, transparent) 35%,
+    var(--color-slate-soft) 100%
+  );
+  box-shadow: 0 0 10px color-mix(in srgb, var(--color-slate-soft) 45%, transparent);
 }
 
 .hero-reveal-kicker::before {
