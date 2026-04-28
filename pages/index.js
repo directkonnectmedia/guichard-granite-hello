@@ -39,15 +39,14 @@ section {
         </div>
         <section id="home" className="hero-reveal">
           <div className="hero-reveal-media">
-            <video
-              src="https://videos.pexels.com/video-files/3773485/3773485-hd_1920_1080_30fps.mp4"
-              loop
-              muted
-              poster="https://images.pexels.com/videos/3773485/pictures/preview-0.jpg"
-              autoPlay
-              playsInline
-            ></video>
+            <img
+              src="https://images.pexels.com/photos/7031607/pexels-photo-7031607.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2400"
+              alt="Luxury quartz countertop kitchen with stone island"
+              className="hero-reveal-image"
+            />
             <div className="hero-reveal-overlay"></div>
+            <div className="hero-reveal-orb hero-reveal-orb-one"></div>
+            <div className="hero-reveal-orb hero-reveal-orb-two"></div>
           </div>
           <div className="hero-reveal-container">
             <div className="hero-reveal-data-bar">
@@ -69,6 +68,9 @@ section {
               </div>
             </div>
             <div className="hero-reveal-content">
+              <span className="hero-reveal-kicker">
+                Quartz &amp; Granite Countertop Studio
+              </span>
               <h1 className="hero-title">
                 <span>
                   {' '}
