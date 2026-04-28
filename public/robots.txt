@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guichard-granite-hello.vercel.app/sitemap.xml
