@@ -40,8 +40,8 @@ section {
         <section id="home" className="hero-reveal">
           <div className="hero-reveal-media">
             <img
-              src="/hero-kitchen.png"
-              alt="Modern luxury kitchen with veined granite island, custom cabinetry, and pendant lighting"
+              src="https://images.unsplash.com/photo-1613545564241-296299063513?auto=format&amp;fit=crop&amp;q=80&amp;w=2400"
+              alt="Bright modern kitchen with white waterfall marble island and pendant lighting"
               className="hero-reveal-image"
             />
             <div className="hero-reveal-overlay"></div>
@@ -76,8 +76,8 @@ section {
             <div className="services-spotlight-column">
               <div className="services-spotlight-image-container">
                 <img
-                  alt="Luxury Kitchen Countertop"
-                  src="https://images.pexels.com/photos/10827305/pexels-photo-10827305.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Luxury kitchen with dramatic veined marble countertop, matching backsplash, and oak cabinetry"
+                  src="https://images.unsplash.com/photo-1772567732996-bc693c4a016c?auto=format&amp;fit=crop&amp;q=80&amp;w=1600"
                   className="services-spotlight-image"
                 />
                 <div className="services-spotlight-image-overlay"></div>
@@ -138,8 +138,8 @@ section {
             <div className="services-spotlight-column">
               <div className="services-spotlight-image-container">
                 <img
-                  alt="Luxury Bathroom Vanity"
-                  src="https://images.pexels.com/photos/8142047/pexels-photo-8142047.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Modern double vanity with white quartz countertop, oval mirrors, and matte black hardware"
+                  src="https://images.unsplash.com/photo-1774578341998-d1e9a74e82f6?auto=format&amp;fit=crop&amp;q=80&amp;w=1600"
                   className="services-spotlight-image"
                 />
                 <div className="services-spotlight-image-overlay"></div>
@@ -211,7 +211,7 @@ section {
               <div className="portfolio-teaser-item">
                 <img
                   alt="Modern Quartz Kitchen"
-                  src="https://images.pexels.com/photos/7027854/pexels-photo-7027854.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.unsplash.com/photo-1613545564241-296299063513?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
                 />
                 <div className="portfolio-teaser-overlay">
                   <span className="portfolio-teaser-caption">
@@ -222,7 +222,7 @@ section {
               <div className="portfolio-teaser-item">
                 <img
                   alt="Custom Granite Island"
-                  src="https://images.pexels.com/photos/6835085/pexels-photo-6835085.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.unsplash.com/photo-1776831293955-f569f2f3a4b5?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
                 />
                 <div className="portfolio-teaser-overlay">
                   <span className="portfolio-teaser-caption">
@@ -233,7 +233,7 @@ section {
               <div className="portfolio-teaser-item">
                 <img
                   alt="Luxury Bathroom Vanity"
-                  src="https://images.pexels.com/photos/10511536/pexels-photo-10511536.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.unsplash.com/photo-1771681744660-d3ff70bc24a2?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
                 />
                 <div className="portfolio-teaser-overlay">
                   <span className="portfolio-teaser-caption">
@@ -244,7 +244,7 @@ section {
               <div className="portfolio-teaser-item">
                 <img
                   alt="Waterfall Edge Detail"
-                  src="https://images.pexels.com/photos/3935337/pexels-photo-3935337.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.unsplash.com/photo-1772567732996-bc693c4a016c?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
                 />
                 <div className="portfolio-teaser-overlay">
                   <span className="portfolio-teaser-caption">
@@ -255,7 +255,7 @@ section {
               <div className="portfolio-teaser-item">
                 <img
                   alt="Dual Sink Master Bath"
-                  src="https://images.pexels.com/photos/8583532/pexels-photo-8583532.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.unsplash.com/photo-1774578341998-d1e9a74e82f6?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
                 />
                 <div className="portfolio-teaser-overlay">
                   <span className="portfolio-teaser-caption">
@@ -265,12 +265,12 @@ section {
               </div>
               <div className="portfolio-teaser-item">
                 <img
-                  alt="Veined Marble Backsplash"
-                  src="https://images.pexels.com/photos/10099160/pexels-photo-10099160.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Heritage Stone Kitchen"
+                  src="https://images.unsplash.com/photo-1723902499865-98918d4dbf7b?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
                 />
                 <div className="portfolio-teaser-overlay">
                   <span className="portfolio-teaser-caption">
-                    Veined Marble Backsplash
+                    Heritage Stone Kitchen
                   </span>
                 </div>
               </div>
