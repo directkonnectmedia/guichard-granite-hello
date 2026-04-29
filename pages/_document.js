@@ -6,6 +6,12 @@ class CustomDocument extends Document {
         <Head>
           <meta charSet="utf-8"></meta>
           <meta property="twitter:card" content="summary_large_image"></meta>
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                "try{if('scrollRestoration' in history){history.scrollRestoration='manual'}var h=window.location.hash;if(!h||h==='#'||h==='#home'){window.scrollTo(0,0)}}catch(e){}",
+            }}
+          ></script>
           <style
             dangerouslySetInnerHTML={{
               __html:
