@@ -9,7 +9,7 @@ class CustomDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html:
-                "try{if('scrollRestoration' in history){history.scrollRestoration='manual'}var h=window.location.hash;if(!h||h==='#'||h==='#home'){window.scrollTo(0,0)}}catch(e){}",
+                "(function(){try{if('scrollRestoration' in history){history.scrollRestoration='manual'}if(window.location.hash){history.replaceState(null,'',window.location.pathname+window.location.search)}function toTop(){try{window.scrollTo({top:0,left:0,behavior:'instant'})}catch(e){window.scrollTo(0,0)}}toTop();document.addEventListener('DOMContentLoaded',toTop,{once:true});window.addEventListener('load',toTop,{once:true})}catch(e){}})();",
             }}
           ></script>
           <style
